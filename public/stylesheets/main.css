@@ -20102,6 +20102,18 @@ th.hide-for-touch {
   color: #333;
 }
 
+.fuchsia {
+  color: #FF00FF;
+}
+
+.yellow {
+  color: goldenrod;
+}
+
+.blue {
+  color: #00A8E3;
+}
+
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

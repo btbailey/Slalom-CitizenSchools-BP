@@ -55,3 +55,31 @@ facts = [
 "After humans, mountain lions have the largest range of any mammal in the Western Hemisphere.",
 "Cats lived with soldiers in trenches, where they killed mice during World War I."
 ];
+
+
+// Send Feedback Email
+$('#send-button').click(function(){
+  
+  var name;
+  var email;
+  var message;
+  
+  name = $('#contact-name').val();
+  email = $('#contact-email').val();
+  message = $('#contact-message').val();
+
+  console.log('sending email', {
+    name: name,
+    email: email,
+    message: message
+  } );
+  
+  $.ajax('/feedback', {
+    data: {
+      name: name,
+      email: email,
+      message: message
+    }
+  });
+  
+});
