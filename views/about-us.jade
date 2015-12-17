@@ -1,0 +1,58 @@
+extends layout
+
+block content
+  #about-us.row
+    .small-12.medium-12.large-12.columns
+      section.our-team
+        h1 Our Team
+        p
+          |  Lorem ipsum dolor sit amet, ei pri amet eros rebum, et dolor perfecto eloquentiam eos. Vim at posse populo,
+          |  natum primis posidonium qui no, ex vis natum aeterno tibique. Eum scaevola menandri platonem ei. Est tale apeirian no, at pro placerat facilisis.
+          |  Te qui esse homero discere. Ut prompta eligendi qui, sed cibo velit audiam ad, nonumes evertitur vix ne.
+        p
+          |  Lorem ipsum dolor sit amet, ei pri amet eros rebum, et dolor perfecto eloquentiam eos. Vim at posse populo, 
+          |  natum primis posidonium qui no, ex vis natum aeterno tibique. Eum scaevola menandri platonem ei. Est tale apeirian no, at pro placerat facilisis.
+          |  Te qui esse homero discere. Ut prompta eligendi qui, sed cibo velit audiam ad, nonumes evertitur vix ne.
+      section.row.clearfix.team-member-1
+        h3 Brandon Bailey
+        img.large-3.right(src="/images/brandon-02.png")
+        p.large-6.left
+          |  First and formost Brandon is Lorem ipsum dolor sit amet, ei pri amet eros rebum, et dolor perfecto eloquentiam eos. 
+          |  Vim at posse populo, natum primis posidonium qui no, ex vis natum aeterno tibique. Eum scaevola menandri platonem ei. 
+          |  Est tale apeirian no, at pro placerat facilisis. Te qui esse homero discere. Ut prompta eligendi qui, sed cibo velit audiam ad, nonumes evertitur vix ne.
+        p.large-6.left
+          |  First and formost Brandon is Lorem ipsum dolor sit amet, ei pri amet eros rebum, et dolor perfecto eloquentiam eos.
+          |  Vim at posse populo, natum primis posidonium qui no, ex vis natum aeterno tibique. Eum scaevola menandri platonem ei.
+          |  Est tale apeirian no, at pro placerat facilisis. Te qui esse homero discere. Ut prompta eligendi qui, sed cibo velit audiam ad, nonumes evertitur vix ne.
+      section.row.clearfix.team-member-2
+        h3 Christy Cunningham 
+        img.large-3.left(src="/images/christy-01.png")
+        p.large-6.right
+          |  First and formost Brandon is Lorem ipsum dolor sit amet, ei pri amet eros rebum, et dolor perfecto eloquentiam eos. Vim at posse populo,
+          |  natum primis posidonium qui no, ex vis natum aeterno tibique. Eum scaevola menandri platonem ei. Est tale apeirian no, at pro placerat facilisis.
+          |  Te qui esse homero discere. Ut prompta eligendi qui, sed cibo velit audiam ad, nonumes evertitur vix ne.
+        p.large-6.right
+          |  First and formost Brandon is Lorem ipsum dolor sit amet, ei pri amet eros rebum, et dolor perfecto eloquentiam eos. Vim at posse populo, natum primis 
+          |  posidonium qui no, ex vis natum aeterno tibique. Eum scaevola menandri platonem ei. Est tale apeirian no, at pro placerat facilisis. Te qui esse homero
+          |  discere. Ut prompta eligendi qui, sed cibo velit audiam ad, nonumes evertitur vix ne.
+  #additional-content.row
+    
+    .small-12.columns.count-down-timer
+    .small-6.columns
+      div 
+        button.radius.success(onclick='showClock()') Click to show the clock!
+      div 
+        button.radius.alert(onclick='hideClock()') Click to hide the clock!
+      div
+        button.radius(onclick='showSecretMessage()') Click here for a secret message
+      div.self-destruct
+        button.radius.warning(onclick='selfDestruct()') Click here to self destruct
+      div
+        button.radius.secondary(onclick='watchAVideo()') Click here to watch a video
+      div
+        button.radius.info(onclick='gimmeAFact()') Click here for a fun fact
+    .small-6.columns.small-centered
+      #clock-container
+        include partials/clock
+    .small-12.columns.fact-container
+    .small-12.columns.js-video-container

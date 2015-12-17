@@ -1,0 +1,13 @@
+doctype html
+html
+  include partials/head
+  body
+    .off-canvas-wrap(data-offcanvas)
+      .inner-wrap
+        include partials/header
+        div.main-section
+          div.full-height
+            block content
+        include partials/footer
+        a.exit-off-canvas
+  include partials/scripts

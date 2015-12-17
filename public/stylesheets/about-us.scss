@@ -1,0 +1,42 @@
+#about-us {
+  padding: 10px;
+  
+  section {
+    margin-bottom: 10px;
+  }
+  
+  .team-member-1 {
+    background-image: url('background-images/dinosuars-bg-01.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+    padding: 10px;
+    
+    h3, p {
+      color: $white; 
+    }
+  }
+
+  .team-member-2 {
+    background-image: url('background-images/yoga-warrior-pose.jpg');
+    background-size: 50%;
+    background-repeat: repeat-x;
+
+    padding: 10px;
+
+    h3, p {
+      color: $white;
+    }
+  }
+  
+
+  #additional-content {
+    .fact-container {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    #clock-container {
+      margin-bottom: 30px;
+    }
+  }
+}

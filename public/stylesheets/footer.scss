@@ -1,0 +1,21 @@
+#footer-wrapper {
+  background: $footer-dark-blue;
+  color: $light-grey;
+  color: $transparent-grey;
+}
+
+#footer {
+  position: relative;
+  text-shadow: 1px 1px 0 #fff;
+  background-color: #fff;
+  background-image: url('background-images/bg03.png'), url('background-images/bg02.png');
+  background-repeat: no-repeat, repeat;
+  background-size: 100% 15em, auto auto;
+  background-position: top center, top left;
+
+  .partners-logo {
+    img {
+      width: 50%; 
+    }
+  }
+}

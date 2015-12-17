@@ -1,0 +1,30 @@
+$white: #fff;
+$grey: #eee;
+$backgroud-grey: rgb(239, 239, 239);
+$light-grey: #F8F8F8;
+$dark-grey: #D6D7D8;
+$border-grey: #DDDDDD;
+$body-grey: #666666;
+$label-grey: #666;
+$dark: #555555;
+$black: #333;
+
+$yellow: #ffff00;
+$deep-pink: #FF1493;
+$fuchsia: #FF00FF;
+$turquoise: #40E0D0;
+$slalom-blue: #00A8E3;
+$footer-dark-blue: #282b34;
+$transparent-grey: rgba(255, 255, 255, 0.5);
+
+.grey{
+  color: $grey;
+}
+
+.label-grey{
+  color: $label-grey;
+}
+
+.black{
+  color: $black;
+}

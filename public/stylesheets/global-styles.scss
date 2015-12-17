@@ -1,0 +1,106 @@
+.full-height{
+  height: 100%;
+}
+
+/*Small screens*/
+@media #{$screen} {
+ 
+} /* Define mobile styles */
+
+
+/*Medium screens*/
+@media only screen and (orientation: portrait) and (min-width: 40.063em) {
+}
+
+@media only screen and (orientation: landscape) and (min-width: 40.063em) and (max-width: 64em) {
+
+  #header-wrapper {
+    background: url("../images/banner.jpg") center center;
+    background-size: cover;
+    background-color: $backgroud-grey;
+    padding: 6em 2em;
+  }
+
+  #nav {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  
+  }
+
+  #nav-section {
+    li a:not(.button) {
+      background: transparent;
+      box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+
+      li a:not(.button):hover {
+        background: transparent;
+        box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+      }
+    }
+  }
+  #header-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("background-images/overlay.png");
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  
+
+  #header-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("background-images/overlay.png");
+  }
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+
+  #nav-section {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+
+  #nav-section li a:not(.button) {
+    background: transparent;
+    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+  }
+
+  #nav-section li a:not(.button):hover {
+    background: transparent;
+    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+  }
+
+  #header-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("background-images/overlay.png");
+  }
+} /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+/*XLarge screens*/
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+ 
+  #nav {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+}
