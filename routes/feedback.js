@@ -6,7 +6,7 @@ var nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
-    user: '@gmail.com',
+    user: 'tylerallisondeveloper@gmail.com',
     pass: 'ilovecode1'
   }
 });
@@ -16,10 +16,10 @@ function sendMail(mailData){
 
   // setup e-mail data with unicode symbols
   var mailOptions = {
-    from: 'Fred Foo ✔ <bailey1.brandon@gmail.com>', // sender address
-    to: 'bailey1.brandon@gmail.com', // list of receivers
-    subject: 'Hello ✔ 😎😁😃', // Subject line
-    text: 'Hello world ✔', // plaintext body
+    from: 'Tyler ✔ <tylerallisondeveloper@gmail.com>', // sender address
+    to: 'tylerallisondeveloper@gmail.com, bailey1.brandon@gmail.com ' + mailData.email, // list of receivers
+    subject: '‼️ Hello and Thank You from Citizen Schools ‼️ 😎😁😃', // Subject line
+    text: 'Thanks for your feedback!', // plaintext body
     html: '<b>Hello world ✔</b>' // html body
   };
 
