@@ -80,6 +80,9 @@ $('#send-button').click(function(){
       email: email,
       message: message
     }
+  })
+    .done(function(response){
+    alert('pass');
   });
   
 });

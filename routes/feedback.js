@@ -17,7 +17,7 @@ function sendMail(mailData){
   // setup e-mail data with unicode symbols
   var mailOptions = {
     from: 'Fred Foo ✔ <bailey1.brandon@gmail.com>', // sender address
-    to: 'bailey1.brandon@gmail.com, ' + mailData.email, // list of receivers
+    to: 'bailey1.brandon@gmail.com', // list of receivers
     subject: 'Hello ✔ 😎😁😃', // Subject line
     text: 'Hello world ✔', // plaintext body
     html: '<b>Hello world ✔</b>' // html body
