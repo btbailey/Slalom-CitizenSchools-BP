@@ -2,13 +2,13 @@
   #footer
     div.row
       .small-12.medium-12.large-12.columns
-        section
+        section.small-12.medium-12.large-12
           h2 Footer Content
           p
             |  Lorem ipsum dolor sit amet, ei pri amet eros rebum, et dolor perfecto eloquentiam eos. Vim at posse populo, natum primis posidonium qui no, ex vis natum aeterno tibique.
             |  Eum scaevola menandri platonem ei. Est tale apeirian no, at pro placerat facilisis. Te qui esse homero discere. Ut prompta eligendi qui, sed cibo velit audiam ad, nonumes evertitur vix ne.
-        section.row#feedback-form
-          div.small-12.medium-12.large-7
+        section#feedback-form.row.small-12.medium-7.large-12
+          div.small-12.medium-12.large-7.small-centered.columns
             form(name="suggestionsForm")
               div.row
                 div.small-12.large-6.medium-12.columns
@@ -19,10 +19,8 @@
                 div.small-12.medium-12.large-12.columns
                   textarea#contact-message(name="message-field", placeholder="Message")
               div.small-12.medium-12.large-12.button-group.clearfix
-                a.small-12.medium-6.large-6.button.right(href="#") Send
+                a#send-button.small-12.medium-6.large-6.button.right(href="#") Send
                 a.small-12.medium-6.large-6.button.secondary.left(href="#") Reset
-        section.row
-          div.small-12.medium-5.large-5.columns
       hr
     .row.display
       .small-6.small-centered.large-centered.columns

@@ -4,7 +4,13 @@
 
 /*Small screens*/
 @media #{$screen} {
- 
+  .top-bar-section ul li{
+    background-color: rgb(77, 185, 183);
+  }
+
+  #toggle-button{
+    color: rgb(77, 185, 183);
+  }
 } /* Define mobile styles */
 
 
@@ -14,13 +20,6 @@
 
 @media only screen and (orientation: landscape) and (min-width: 40.063em) and (max-width: 64em) {
 
-  #header-wrapper {
-    background: url("../images/banner.jpg") center center;
-    background-size: cover;
-    background-color: $backgroud-grey;
-    padding: 6em 2em;
-  }
-
   #nav {
     position: absolute;
     width: 100%;
@@ -28,17 +27,6 @@
   
   }
 
-  #nav-section {
-    li a:not(.button) {
-      background: transparent;
-      box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
-
-      li a:not(.button):hover {
-        background: transparent;
-        box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
-      }
-    }
-  }
   #header-wrapper:before {
     content: '';
     position: absolute;
@@ -72,6 +60,8 @@
     text-align: center;
   }
 
+  
+
   #nav-section li a:not(.button) {
     background: transparent;
     box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
@@ -102,5 +92,16 @@
     position: absolute;
     width: 100%;
     text-align: center;
+  }
+
+  #nav-section li a:not(.button) {
+    background: transparent;
+    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+  }
+
+  #nav-section li a:not(.button):hover {
+    background: transparent;
+    opacity: 0.8;
+    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
   }
 }

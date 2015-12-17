@@ -22843,35 +22843,31 @@ th.hide-for-touch {
 #footer .partners-logo img {
   width: 50%;
 }
+#footer #send-button {
+  background-color: #fb4044;
+}
 
 .full-height {
   height: 100%;
 }
 
 /*Small screens*/
+@media only screen {
+  .top-bar-section ul li {
+    background-color: #4db9b7;
+  }
+
+  #toggle-button {
+    color: #4db9b7;
+  }
+}
 /* Define mobile styles */
 /*Medium screens*/
 @media only screen and (orientation: landscape) and (min-width: 40.063em) and (max-width: 64em) {
-  #header-wrapper {
-    background: url("../images/banner.jpg") center center;
-    background-size: cover;
-    background-color: #efefef;
-    padding: 6em 2em;
-  }
-
   #nav {
     position: absolute;
     width: 100%;
     text-align: center;
-  }
-
-  #nav-section li a:not(.button) {
-    background: transparent;
-    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
-  }
-  #nav-section li a:not(.button) li a:not(.button):hover {
-    background: transparent;
-    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
   }
 
   #header-wrapper:before {
@@ -22931,6 +22927,17 @@ th.hide-for-touch {
     position: absolute;
     width: 100%;
     text-align: center;
+  }
+
+  #nav-section li a:not(.button) {
+    background: transparent;
+    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+  }
+
+  #nav-section li a:not(.button):hover {
+    background: transparent;
+    opacity: 0.8;
+    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
   }
 }
 #about-us {
