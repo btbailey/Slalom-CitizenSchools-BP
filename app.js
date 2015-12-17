@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var instagramIntegration = require('./routes/third-party-integrations');
+var sandbox = require('./routes/sandbox');
 var aboutUs = require('./routes/about-us');
 var feedback = require('./routes/feedback');
 
@@ -28,6 +29,7 @@ app.use('/bower_components', express.static(__dirname + '/bower_components'));
 app.use('/', routes);
 app.use('/posts', instagramIntegration);
 app.use('/about-us', aboutUs);
+app.use('/sandbox', sandbox)
 app.use('/feedback', feedback);
 
 // catch 404 and forward to error handler
